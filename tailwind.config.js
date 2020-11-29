@@ -1,8 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  presets: [
-    require('full-palette')
-  ],
+  presets: [require("full-palette")],
   experimental: {
     // uniformColorPalette: true,
     applyComplexClasses: true,
@@ -14,15 +12,15 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
       sans: ["'Inter'", "Inter", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       fontSize: {
-        '28': '1.75rem'
-      }
+        28: "1.75rem",
+      },
     },
   },
   variants: {},
