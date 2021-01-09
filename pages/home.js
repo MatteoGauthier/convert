@@ -7,13 +7,15 @@ import Main from "../components/Main";
 const home = () => {
   return (
     <Layout>
-      <Header />
-      <Main />
-      <ButtonsGroup>
-        <DownloadButton />
-        <ClearButton />
-        <LogsButton />
-      </ButtonsGroup>
+      <main>
+        <Header />
+        <Main />
+        <ButtonsGroup>
+          <DownloadButton />
+          <ClearButton />
+          <LogsButton />
+        </ButtonsGroup>
+      </main>
     </Layout>
   );
 };
